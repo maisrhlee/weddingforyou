@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Italianno:300,400,500,600,700,800,900&display=swap');
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins',sans-serif;
+ scroll-behavior: smooth;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#A0522D,#FAFAD2);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+header .logo
+{
+    color: #964b296c;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+   text-decoration: none;
+   padding: 6px 15px;
+   color: #A0522D;
+   border-radius:20px;
+}
+
+header ul li a:hover,
+header ul li a:active
+{
+    background: #fff;
+    color: #A0522D;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#A0522D,transparent);
+    z-index: 1000;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#wedding
+{
+    mix-blend-mode: screen;
+}
+
+#btn:hover,
+#btn:active
+{
+    box-shadow: 1px 1px 20px #A0522D;
+}
+
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #FAFAD2;
+    color:#A0522D;
+    font-size: 1.5em;
+    z-index:9;
+    transform: translateY(100px);
+    cursor: pointer;
+    box-shadow: 1px 1px 20px #A0522D;
+}
+
+.sec
+{
+    position: absolute;
+    padding :100px;
+    background: #A0522D ;
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #FAFAD2;
+    text-align: center;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: #FAFAD2;
+    text-justify: auto;
+}
+
+#wed
+{
+    background: linear-gradient(to top,#FAFAD2,transparent);
+    z-index: 1000;
+}
+
+.wrapper{
+    background: #FAFAD2;
+    width: 600x;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    align-items: center;
+}
+
+.wrapper h2{
+    text-align: center;
+    align-items: center;
+    color: #A0522D;
+}
+
+.wrapper hr{
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+}
+.members{
+    display: flex;
+    align-items: center;
+}
+
+.team-mem{
+    margin: 8px;
+}
+
+.team-mem img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.team-mem h4{
+    text-align: center;
+    font-size: 12px;
+    margin: 7px;
+    color: #A0522D;
+}
+
+.team-mem p
+{
+    color: #A0522D;
+}
